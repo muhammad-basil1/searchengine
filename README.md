@@ -1,24 +1,11 @@
-# README
+# Search Engine
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To run the service, open rails console and run following code;
 
-Things you may want to cover:
+```SearchEngine.new(service_name, geolocation).call```
 
-* Ruby version
+#### For Example
 
-* System dependencies
+```SearchEngine.new('Massör', 'Massör').call```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This will return locations that are matched with similarity above 70%
